@@ -27,7 +27,7 @@ def home():
 
 @app.route('/boo', methods=['GET'])
 def boo():
-    return render_template('boo.html')
+    return render_template('boo/index.html')
 
 
 
