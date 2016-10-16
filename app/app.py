@@ -25,5 +25,11 @@ def home():
     return render_template('index.html')
 
 
+@app.route('/boo', methods=['GET'])
+def boo():
+    return render_template('boo.html')
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
