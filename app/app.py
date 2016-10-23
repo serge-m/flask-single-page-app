@@ -30,6 +30,9 @@ def boo():
     return render_template('boo/index.html')
 
 
+@app.route('/payment', methods=['GET'])
+def payment():
+    return render_template('payment.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

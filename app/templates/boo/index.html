@@ -14,17 +14,18 @@
     <link href="{{ url_for('static', filename='assets/css/bootstrap.css') }}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ url_for('static', filename='assets/css/ionicons.min.css') }}" rel="stylesheet">
+    <!--<link href="{{ url_for('static', filename='assets/css/ionicons.min.css') }}" rel="stylesheet">-->
     <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
-
+    <link href="{{ url_for('static', filename='assets/css/payment_style.css') }}" rel="stylesheet">
 
 
   </head>
 
   <body>
 
+
     <div id="h">
-      <div class="logo">BLACKTIE.CO</div>
+      <!--<div class="logo">Find a stranger in Facebook</div>-->
       <div class="social hidden-xs">
         <a href="#"><i class="ion-social-twitter"></i></a>
         <a href="#"><i class="ion-social-instagram"></i></a>
@@ -33,14 +34,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 centered">
-            <h1>Welcome to our new app site.<br/>Sign up now & prepare to enjoy our service.</h1>
+            <h1>Find a stranger in Facebook<br/>Sign up now access global faces database</h1>
             <div class="mtb">
-              <form role="form" action="register.php" method="post" enctype="plain"> 
+              <form role="form" action="register.php" method="post" enctype="plain">
+
                 <input type="email" name="email" class="subscribe-input" placeholder="Enter your e-mail address..." required>
-                <button class='btn btn-conf btn-green' type="submit">Sart your free trial</button>
+                <button class='btn btn-conf btn-green' type="submit">Start your free trial</button>
               </form>
             </div><!--/mt-->
-            <h6>30 DAY FREE TRIAL - NO CREDIT CARD NEEDED.</h6>
+            <h6>30 DAY FREE TRIAL</h6>
           </div>
         </div><!--/row-->
       </div><!--/container-->
@@ -61,18 +63,6 @@
         </div>
       </div><!--/row-->
     </div><!--/container-->
-
-    <div id="sep">
-      <div class="container">
-        <div class="row centered">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>Join your experiences with the people you care more. Let us help you.</h1>
-            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h4>
-            <p><button class="btn btn-conf-2 btn-green">Learn More</button></p>
-          </div><!--/col-md-8-->
-        </div>
-      </div>
-    </div><!--/sep-->
 
     <div class="container ptb">
       <div class="row centered">
@@ -120,6 +110,7 @@
               </div><!--/p-body-->
           </div><!--/price-table-->
         </div><!--/col-md-4-->
+
 
          <div class="col-md-4">
           <div class="price-table">
@@ -213,11 +204,69 @@
       </div><!--/container-->
     </div><!--/F-->
 
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='assets/js/retina-1.1.0.js') }}"></script>
+
+<span class="payment">
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Payment Details
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                    <div class="form-group">
+                        <label for="cardNumber">
+                            CARD NUMBER</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                                required autofocus />
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-7 col-md-7">
+                            <div class="form-group">
+                                <label for="expityMonth">
+                                    EXPIRY DATE</label>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                </div>
+                                <div class="col-xs-6 col-lg-6 pl-ziro">
+                                    <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-5 col-md-5 pull-right">
+                            <div class="form-group">
+                                <label for="cvCode">
+                                    CV CODE</label>
+                                <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#"><span class="badge pull-right"><span class="glyphicon glyphicon-usd"></span>4200</span> Final Payment</a>
+                </li>
+            </ul>
+            <br/>
+            <a href="http://www.jquery2dotnet.com" class="btn btn-success btn-lg btn-block" role="button">Pay</a>
+        </div>
+    </div>
+</div>
+</span>
+
   </body>
 </html>

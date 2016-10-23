@@ -15,11 +15,6 @@
 /* Import fonts */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
-* { 
-	margin: 0;
-	padding: 0px;
-    font-family: 'Lato', sans-serif;
-} 
 body { 
 	background: #fff; 
 	margin: 0; 
@@ -135,6 +130,7 @@ input {
 	width: 65%;
 	text-align: left;
 	margin-right: 2px;
+    color: black;
 }
 
 @media screen and (max-width: 767px) {
@@ -178,7 +174,7 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: url(../img/sep.jpg) no-repeat center top;
 	padding-top: 180px;
 	text-align:center;
 	background-attachment: relative;
