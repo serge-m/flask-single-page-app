@@ -114,7 +114,7 @@ a:focus {
 input {
 	font-size: 16px;
 	min-height: 40px;
-	border-radius: 25px;
+	border-radius: 4px;
 	line-height: 20px;
 	padding: 15px 30px 16px;
 	border: 1px solid #b9b9af;
@@ -149,7 +149,7 @@ input {
 
 /*Buttons Configuration */
 .btn-conf {
-	border-radius: 50px;
+	border-radius: 4px;
 	margin-right: 15px;
 	font-size: 11px;
 	letter-spacing: 1px;
@@ -158,7 +158,7 @@ input {
 	}
 
 .btn-conf-2 {
-	border-radius: 50px;
+	border-radius: 4px;
 	margin-right: 15px;
 	font-size: 11px;
 	letter-spacing: 1px;
